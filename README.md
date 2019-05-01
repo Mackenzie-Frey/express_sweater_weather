@@ -3,7 +3,7 @@
 ## Description
 Express Sweater Weather is a 6-day, solo project during module four of four, of Turing School's Back-End Engineering Program.
 
-Express Sweater Weather is a web application designed to consume/produce API's. The application utilizes -------, with a PostgreSQL database, to consume the Dark Sky API for weather, the Google Maps API for geocoding, and the Unsplash API for city images.
+Express Sweater Weather is a web application designed to consume/produce API's. The application utilizes -------, with a PostgreSQL database, to consume the Dark Sky API for weather, and the Google Maps API for geocoding.
 
 #### [**_View Sweater Weather in Production_**](https://express-sweater-weather.herokuapp.com/) </br>
 
@@ -25,16 +25,12 @@ $ ------>>>>
 ##### Sign Up for the following APIs:
 * [Dark Sky](https://darksky.net/dev)
 * [Google Maps](https://developers.google.com/maps/documentation/javascript/get-api-key)
-* [Unsplash](https://unsplash.com/developers)
 
 
 Add the following code snippet to the ------>>>>`config/application.yml` file. Make sure to insert the key/secret without the alligator clips ( < > ).
 ```
 dark_sky_key: <insert>
 google_maps_key: <insert>
-unsplash_client_id: <insert>
-unsplash_client_secret: <insert>
-amypode_key: oscar_the_grouch
 ```
 
 ## Running Tests
@@ -68,10 +64,8 @@ DELETE /api/v1/favorites, body: {"location": "Denver, CO", "api_key": "jgn983hy4
 ```
 
 ## Tools
-* Fast JSON API
 * Dark Sky API
 * Google Maps API
-* Unsplash Image API
 * Postman
 * Faraday------>>>>
 * Figaro ------>>>>
