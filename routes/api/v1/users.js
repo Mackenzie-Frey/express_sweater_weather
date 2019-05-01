@@ -7,8 +7,8 @@ const bcrypt = require('bcrypt');
 const saltRounds = 10;
 pry = require('pryjs');
 
-router. post("/", function(req, res, next) {
-  if (req.body.password == req.body.password_confirmation) {
+router.post("/", function(req, res, next) {
+  if (req.body.password === req.body.password_confirmation) {
     User.create({
       email: req.body.email,
       passwordDigest: encryptPassword(req.body.password),
