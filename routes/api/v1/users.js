@@ -3,13 +3,15 @@ var crypto = require("crypto");
 var router = express.Router();
 var User = require('../../../models').User;
 var apiKey = crypto.randomBytes(20).toString('hex');
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
 pry = require('pryjs');
 
 router. post("/", function(req, res, next) {
   if (req.body.password == req.body.password_confirmation) {
     User.create({
       email: req.body.email,
-      passwordDigest: "passwordHelperFunction",
+      passwordDigest: encryptPassword(req.body.password),
       api_key: apiKey
     })
     .then(user => {
@@ -25,6 +27,10 @@ router. post("/", function(req, res, next) {
 
 function customizeJson(user) {
   return {"api_key": user.api_key};
+}
+
+function encryptPassword(plainTextPassword) {
+    bcrypt.hashSync(plainTextPassword, saltRounds);
 }
 
 module.exports = router;
