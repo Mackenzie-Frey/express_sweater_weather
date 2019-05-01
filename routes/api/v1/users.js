@@ -30,7 +30,7 @@ function customizeJson(user) {
 }
 
 function encryptPassword(plainTextPassword) {
-    bcrypt.hashSync(plainTextPassword, saltRounds);
+    return bcrypt.hashSync(plainTextPassword, saltRounds);
 }
 
 module.exports = router;
