@@ -5,7 +5,6 @@ var User = require('../../../models').User;
 var apiKey = crypto.randomBytes(20).toString('hex');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
-pry = require('pryjs');
 
 router.post("/", function(req, res, next) {
   if (req.body.password === req.body.password_confirmation) {
