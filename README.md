@@ -18,7 +18,6 @@ $ git clone git@github.com:Mackenzie-Frey/express_sweater_weather.git
 $ cd express_sweater_weather
 $ bundle
 $ npm install
-$ ------>>>>
 ```
 #### Environment Variable Setup:
 
@@ -39,17 +38,9 @@ To run the test suite, execute the following command: ------>>>>`rspec`.
 
 ## Deployment
 
-To view Express Sweater Weather in development, execute the following command from the project directory: ------>>>>`rails s`. To view the application in a web browser, visit `localhost:3000`.
+To view Express Sweater Weather in development, execute the following command from the project directory: ------>>>>`nodemon npm start`. To view the application in a web browser, visit `localhost:3000`.
 
-To view the application in production, from the project directory, execute the following commands:
-```
------->>>>------>>>>------>>>>
-$ createuser -s -r sweater_weather
-$ RAILS_ENV=production rake db:{drop,create,migrate}
-$ rake assets:precompile
-$ rails s -e production
------->>>>------>>>>
-```
+
 
 ## Available Endpoints
 ```
@@ -70,10 +61,11 @@ DELETE /api/v1/favorites, body: {"location": "Denver, CO", "api_key": "jgn983hy4
 * Faraday------>>>>
 * Figaro ------>>>>
 * GitHub Projects
-* RSpec------>>>>
+* Jest------>>>>
 * Capybara------>>>>
 * Pry ------>>>>
 * SimpleCov ------>>>>
+* Nodemon
 
 ## Rubric/Project Description
 #### [**_View the Project Description and Rubric_**]http://backend.turing.io/module4/projects/express_sweater_weather/express_sweater_weather_spec
