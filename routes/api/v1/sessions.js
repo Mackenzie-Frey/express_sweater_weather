@@ -28,5 +28,3 @@ module.exports = router;
   // }
 
   // Need another catch statement?
-
-  // Resolving promises utilizing the then statements and catch
