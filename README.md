@@ -31,7 +31,7 @@ Add the following code snippet to the ------>>>>`config/application.yml` file. M
 dark_sky_key: <insert>
 google_maps_key: <insert>
 ```
-
+Create a .env file in the root directory of your project. Add to the .gitignore
 ## Running Tests
 
 To run the test suite, execute the following command: ------>>>>`rspec`.
@@ -66,6 +66,7 @@ DELETE /api/v1/favorites, body: {"location": "Denver, CO", "api_key": "jgn983hy4
 * Pry ------>>>>
 * SimpleCov ------>>>>
 * Nodemon
+* dotenv
 
 ## Rubric/Project Description
 #### [**_View the Project Description and Rubric_**]http://backend.turing.io/module4/projects/express_sweater_weather/express_sweater_weather_spec
