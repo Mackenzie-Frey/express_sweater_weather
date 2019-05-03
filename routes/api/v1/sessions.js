@@ -1,5 +1,4 @@
 var express = require("express");
-var crypto = require("crypto");
 var router = express.Router();
 var User = require('../../../models').User;
 const bcrypt = require('bcrypt');
@@ -29,5 +28,3 @@ module.exports = router;
   // }
 
   // Need another catch statement?
-
-  // Resolving promises utilizing the then statements and catch
