@@ -73,5 +73,10 @@ DELETE /api/v1/favorites, body: {"location": "Denver, CO", "api_key": "jgn983hy4
 ## Rubric/Project Description
 #### [**_View the Project Description and Rubric_**]http://backend.turing.io/module4/projects/express_sweater_weather/express_sweater_weather_spec
 
+Link for rubric -....
+
+Project board link https://github.com/Mackenzie-Frey/express_sweater_weather/projects/1?add_cards_query=is%3Aopen
+
+
 ## Author
 [Mackenzie Frey](https://github.com/Mackenzie-Frey)
