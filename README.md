@@ -32,6 +32,8 @@ dark_sky_key: <insert>
 google_maps_key: <insert>
 ```
 Create a .env file in the root directory of your project. Add to the .gitignore
+google_key=thing
+dark_sky_key=
 ## Running Tests
 
 To run the test suite, execute the following command: ------>>>>`rspec`.
