@@ -8,13 +8,15 @@ pry = require('pryjs');
 
 router.get("/", function(req, res, next) {
   var address = req.query.location
-  return User.findOne({ where: {api_key: req.body.api_key}})
+  var user = User.findOne({ where: {api_key: req.body.api_key}})
+  console.log(user)
     if(!user) {
-      .catch(error => {
+      user.catch(error => {
         res.status(401).send(JSON.stringify('Unauthorized'));
       })
     } else {
-      .then(user => {
+      user
+      .then(user2 => {
         return fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${process.env.google_key}`)
       })
         .then(function(response) {
