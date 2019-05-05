@@ -22,9 +22,3 @@ function customizeJson(user) {
 }
 
 module.exports = router;
-
-// if (user === undefined) {
-    // res.status(401).send(JSON.stringify('Unauthorized'));
-  // }
-
-  // Need another catch statement?
