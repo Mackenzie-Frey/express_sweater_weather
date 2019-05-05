@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING
   }, {});
   Location.associate = function(models) {
-    Location.hasMany(models.User, {through: 'Favorites'});
+    Location.belongsToMany(models.User, {through: 'Favorites'});
   };
   return Location;
 };
