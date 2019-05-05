@@ -29,9 +29,10 @@ router.get("/", async (req, res, next) => {
     if(!user) {
       res.status(401).send(JSON.stringify('Unauthorized'))
     } else {
-      const favorites = await Favorite.find({where: {UserId: user.id}})
+      eval(pry.it)
+      const favorites = await Favorite.findAll({where: {UserId: user.id}})
 // Do weather stuff
-// res.send
+      res.status(200).send()
     }
   }
   catch(error) {
