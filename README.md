@@ -64,31 +64,37 @@ DELETE /api/v1/favorites, body: {"location": "Denver, CO", "api_key": "<returned
 * shelljs
 * supertest
 
-##### Known Issues
+## Known Issues
 * Account Creation -> [Non-Unique Email](https://github.com/Mackenzie-Frey/express_sweater_weather/issues/14)
  * Upon account creation via a `POST` request to `/api/v1/users`, users are currently able to create a duplicate record in the system, utilizing the same email address.
 
-##### How to Contribute
-Contributions can be made via making a pull request to
+## How to Contribute
+
+###### Contributing Code:
 1. Fork the project.
 2. Write a failing test.
-3. Commit changes that fix the tests.
+3. Commit that failing tests.
+4. Commit changes that fix the tests.
 4. Submit a pull request detailing the change that was made.
 
-##### [**_Agile Project Board_**](https://github.com/Mackenzie-Frey/express_sweater_weather/projects/1?add_cards_query=is%3Aopen)
+###### Submitting a Bug:
+1. Search the existing [issues](https://github.com/Mackenzie-Frey/express_sweater_weather/issues).
+2. Create a new issue if applicable, or contribute to an existing issue.
 
-##### [**_Project Specifications_**](http://backend.turing.io/module4/projects/express_sweater_weather/express_sweater_weather_spec)
+### Related Links:
+###### * [**_Agile Project Board_**](https://github.com/Mackenzie-Frey/express_sweater_weather/projects/1?add_cards_query=is%3Aopen)
+###### * [**_Project Specifications_**](http://backend.turing.io/module4/projects/express_sweater_weather/express_sweater_weather_spec)
+###### * [**_Project Rubric_**](http://backend.turing.io/module4/projects/express_sweater_weather/express_sweater_weather_rubric)
 
-##### [**_Project Rubric_**](http://backend.turing.io/module4/projects/express_sweater_weather/express_sweater_weather_rubric)
-
-#### Author
+### Author
 [Mackenzie Frey](https://github.com/Mackenzie-Frey)
 
-#### Contributors
+### Contributors
 * [Dione Wilson](https://github.com/dionew1)
 * [Cory Westerfield](https://github.com/corywest)
 * [Hillary Stewart](https://github.com/hillstew)
 * [Teresa M Knowles](https://github.com/teresa-m-knowles)
+* [Matthew Foxwell](https://github.com/foxwellm)
 
 
 <!-- Schema Diagram
