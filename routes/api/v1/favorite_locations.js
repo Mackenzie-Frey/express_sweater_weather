@@ -22,4 +22,21 @@ router.post("/", async (req, res, next) => {
   }
 })
 
+
+router.get("/", async (req, res, next) => {
+  try {
+    const user = await User.findOne({ where: {api_key: req.body.api_key}})
+    if(!user) {
+      res.status(401).send(JSON.stringify('Unauthorized'))
+    } else {
+      const favorites = await Favorite.find({where: {UserId: user.id}})
+
+      
+    }
+  }
+  catch {
+    res.status(500).send({ error })
+  }
+})
+
 module.exports = router;
