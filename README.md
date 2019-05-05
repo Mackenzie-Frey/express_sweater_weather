@@ -3,7 +3,7 @@
 ## Description
 Express Sweater Weather is a 6-day, solo project during module four of four, of Turing School's Back-End Engineering Program.
 
-Express Sweater Weather is a web application designed to consume/produce API's. The application utilizes -------, with a PostgreSQL database, to consume the Dark Sky API for weather, and the Google Maps API for geocoding.
+Express Sweater Weather is a web application designed to consume/produce API's. The application utilizes Node.js, Expess and Sequelize, with a PostgreSQL database, to consume the Dark Sky API for weather, and the Google Maps API for geocoding.
 
 #### [**_View Sweater Weather in Production_**](https://express-sweater-weather.herokuapp.com/) </br>
 
@@ -16,7 +16,6 @@ To run Express Sweater Weather on a local machine, navigate to the directory in 
 ```
 $ git clone git@github.com:Mackenzie-Frey/express_sweater_weather.git
 $ cd express_sweater_weather
-$ bundle
 $ npm install
 ```
 #### Environment Variable Setup:
