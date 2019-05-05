@@ -89,7 +89,7 @@ DELETE /api/v1/favorites, body: {"location": "Denver, CO", "api_key": "<returned
 ### Author
 [Mackenzie Frey](https://github.com/Mackenzie-Frey)
 
-### Contributors
+### Collaborators
 * [Dione Wilson](https://github.com/dionew1)
 * [Cory Westerfield](https://github.com/corywest)
 * [Hillary Stewart](https://github.com/hillstew)
