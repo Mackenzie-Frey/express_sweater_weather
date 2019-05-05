@@ -19,7 +19,7 @@ router.get("/", async (req, res, next) => {
       const long = coordinates["lng"];
       const forecastResponse = await fetch(`https://api.darksky.net/forecast/${key}/${lat},${long}?exclude=minutely`)
       const weatherResponse = await forecastResponse.json();
-      res.send(JSON.stringify(parsedWeather(address, weatherResponse)));
+      res.status(200).send(JSON.stringify(parsedWeather(address, weatherResponse)));
     }
   }
   catch(error) {
