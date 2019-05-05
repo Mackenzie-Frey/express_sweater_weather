@@ -8,17 +8,12 @@ pry = require('pryjs');
 
 router.get("/", function(req, res, next) {
   var address = req.query.location
-  var user = User.findOne({ where: {api_key: req.body.api_key}})
-  console.log(user)
+  return User.findOne({ where: {api_key: req.body.api_key}})
+  .then(user => {
     if(!user) {
-      user.catch(error => {
         res.status(401).send(JSON.stringify('Unauthorized'));
-      })
     } else {
-      user
-      .then(user2 => {
         return fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${process.env.google_key}`)
-      })
         .then(function(response) {
           return response.json();
         })
@@ -37,6 +32,10 @@ router.get("/", function(req, res, next) {
                 })
           })
     }
+  })
+  .catch(error => {
+    res.status(500).send({ error })
+  })
 });
 
 function parsedWeather(address, weather) {
